@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+  /* color: hsl(234, 12%, 34%); */
+  margin-bottom: -10px;
+}
+.header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 8px;
+}
+.header p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center;
+  padding: 25px;
+  margin: 50px 70px;
+}
+
+.card {
+  border-radius: 6px;
+  padding: 20px;
+  align-self: center;
+  text-align: right;
+  box-shadow: 0px 22px 17px -10px hsl(229, 6%, 66%);
+}
+.card-text {
+  text-align: left;
+}
+.card-text h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 5px;
+}
+.card-text p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.card img {
+  margin-top: 20px;
+}
+.card1 {
+  border-top: 2px solid hsl(180, 62%, 55%);
+}
+.card2 {
+  border-top: 2px solid hsl(0, 78%, 62%);
+  margin-bottom: 50px;
+}
+.card3 {
+  border-top: 2px solid hsl(34, 97%, 64%);
+}
+.card4 {
+  border-top: 2px solid hsl(212, 86%, 64%);
+}
+
+footer {
+  background-color: #161616;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: brown;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  .header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .header p {
+    font-size: 13px;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+    margin: 0 0;
+  }
+  .card {
+    box-shadow: 0px 22px 17px -20px hsl(229, 6%, 66%);
+  }
+}
